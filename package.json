@@ -1,0 +1,23 @@
+{
+  "name": "assessments",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/11pulakmitra12/Assessment2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/11pulakmitra12/Assessment2/issues"
+  },
+  "homepage": "https://github.com/11pulakmitra12/Assessment2#readme",
+  "dependencies": {
+    "chai": "^5.1.2",
+    "mocha": "^11.0.1"
+  }
+}
