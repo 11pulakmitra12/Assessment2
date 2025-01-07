@@ -19,6 +19,54 @@ function add(...numbers) {
     else return 0;
 }
 
+
+function sumOfAllDigit(num) {
+    let sum = 0;
+    if (num !== 0) {
+        while (num > 0) {
+            sum = sum + (num % 10);
+            num = Math.floor(num / 10);
+        }
+        return sum;
+    }
+    else return 0;
+
+
+}
+
+function checkPrime(num) {
+    let isPrime = true;
+
+    if (num > 1) {
+     // looping through 2 to number/2
+     for (let i = 2; i <= num / 2; i++) {
+       if (num % i == 0) {
+         isPrime = false;
+         break;
+       }
+     }
+    
+     if (isPrime) {
+       return true;
+     } else {
+        return false;
+     }
+    }
+    else if (num===1){
+        return '1 is neighter prime nor composite number'
+    }
+    else return 0;
+    
+
+
+}
+
+
+
+
+
 module.exports = {
-    add
+    add,
+    sumOfAllDigit,
+    checkPrime
 }
